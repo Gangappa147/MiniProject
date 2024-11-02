@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Status</title>
+    <style>
+        /* Basic reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* Form container styling */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Form title */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Input field styling */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/car-service-system1/ServiceRequest" method="GET">
+        <h1>Status</h1>
+        
+        <label for="servicerequest">Service Request</label>
+        <input type="text" id="servicerequest" name="servicerequest" placeholder="Enter your request" required/>
+
+        <label for="carRegNumber">Car Registration Number</label>
+        <input type="text" id="carRegNumber" name="carRegNumber" placeholder="Enter car registration number" required/>
+
+        <input type="submit" value="Submit"/>
+    </form>
+
+</body>
+</html>

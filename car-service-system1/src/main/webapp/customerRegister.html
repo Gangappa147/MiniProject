@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Register</title>
+    <style>
+        /* Body styling to center the form vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Form container */
+        form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Table layout inside the form */
+        table {
+            width: 100%;
+        }
+
+        /* Label cells for Name, Username, Password, etc. */
+        td:first-child {
+            text-align: right;
+            font-weight: bold;
+            padding-right: 15px;
+            color: #333;
+            width: 30%;
+        }
+
+        /* Input fields styling */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for submit button */
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Placeholder styling */
+        input::placeholder {
+            color: #aaa;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            td:first-child {
+                text-align: left;
+                padding-bottom: 5px;
+            }
+
+            input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="/car-service-system1/CustomerRegister">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" placeholder="Enter your full name"></td>
+            </tr>
+            <tr>
+                <td>UserName</td>
+                <td><input type="text" name="username" placeholder="Create a username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" name="password" placeholder="Enter a password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="text" name="confirmpassword" placeholder="Confirm your password"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" placeholder="Enter your email address"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
